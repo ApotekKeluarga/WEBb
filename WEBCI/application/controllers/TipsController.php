@@ -22,7 +22,7 @@ class TipsController extends CI_Controller {
 	function tambah_tips(){
 		$this->load->view('Tips_kesehatan/Tambah_tips');
 	}
-   public function create(){
+   	public function create(){
         if(isset($_POST['btnSubmit'])){
         	$config = array('upload_path' => './assets/web/base/images/',
         					'allowed_types' => 'gif|jpg|png'
