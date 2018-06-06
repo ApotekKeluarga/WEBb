@@ -30,14 +30,14 @@
             </div>
           </div>
           <div class="table-responsive"></div>
-		    <table class="table table-bordered" width="100%" cellspacing="0">
-		      <thead class="bg-light">
-			      <tr>
-			        <th>No.</th>
+        <table class="table table-bordered" width="100%" cellspacing="0">
+          <thead class="bg-light">
+            <tr>
+              <th>No.</th>
               <th>Images</th>
-			        <th width="115px">Action</th>
-			      </tr>
-		    </thead>
+              <th width="115px">Action</th>
+            </tr>
+        </thead>
             <tbody>
               <?php 
               $no =1;
@@ -45,11 +45,8 @@
                 <tr>
                   <td><?php echo $no++ ?></td>
                   <td><img src="<?php echo base_url().$slide -> img ?>" width="100" height="100"></td>
-                  <td>
-                    <a href="<?php echo base_url('index.php/Slideshow/edit/'.$slide -> kd_slideshow) ?>" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row waves-effect waves-classic" data-toggle="tooltip" data-original-title="Edit"><i class="icon md-edit" aria-hidden="true"></i></a>
-                    <a href="<?php echo base_url('index.php/Slideshow/hapus/'.$slide->kd_slideshow) ?>" class="btn btn-sm btn-icon btn-pure btn-default on-default remove-row waves-effect waves-classic" data-toggle="tooltip" data-original-title="Remove" onclick="javascript: return confirm('Anda Yakin Akan Menghapus ?')"><i class="icon md-delete" aria-hidden="true"></i></a>
-                    </a>
-                  </td>
+                  <td><a href="<?php echo base_url('index.php/Slideshow/edit/'.$slide -> kd_slideshow) ?>" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row waves-effect waves-classic" data-toggle="tooltip" data-original-title="Edit"><i class="icon md-edit" aria-hidden="true"></i></a>
+                    <a href="<?php echo base_url('index.php/Slideshow/hapus/'.$slide->kd_slideshow) ?>" class="btn btn-sm btn-icon btn-pure btn-default on-default remove-row waves-effect waves-classic" data-toggle="tooltip" data-original-title="Remove" onclick="javascript: return confirm('Anda Yakin Akan Menghapus ?')"><i class="icon md-delete" aria-hidden="true"></i></a></td>
                 </tr>
             <?php
                 }
