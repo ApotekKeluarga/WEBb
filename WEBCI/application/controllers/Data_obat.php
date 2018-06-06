@@ -35,7 +35,8 @@ class Data_obat extends CI_Controller {
     		{
         		$upload_data = $this -> upload -> data ();
         		$nm_barang = $this -> input -> post ('nm_barang');
-        		$kd_kategori = $this -> input -> post ('kd_kategori');
+        		$nm_kategori = $this -> input -> post ('nm_kategori');
+        		$this-> Kategori_model ->get_kategori();
         		$komposisi = $this -> input -> post ('komposisi');
         		$indikasi = $this -> input -> post ('indikasi');
         		$dosis = $this -> input -> post ('dosis');
@@ -48,7 +49,7 @@ class Data_obat extends CI_Controller {
 				$data = array(
 				'kd_user_admin' => $this->session->userdata('kd_user_admin'),
 				'nm_barang' => $nm_barang,
-				'kd_kategori' => $kd_kategori,
+				'nm_kategori' => $nm_kategori,
 				'komposisi' => $komposisi,
 				'indikasi' => $indikasi,
 				'dosis' => $dosis,
@@ -75,9 +76,10 @@ class Data_obat extends CI_Controller {
 		$this -> load -> library('encrypt');
 		if($row){
 			$data = array(
+				'data_kategori' => $this-> Kategori_model ->get_kategori(),
 				'kd_barang' => $row -> kd_barang,
 				'nm_barang' => $row -> nm_barang,
-				'kd_kategori' => $row -> kd_kategori,
+				'nm_kategori' => $row -> nm_kategori,
 				'komposisi' => $row -> komposisi,
 				'indikasi' => $row -> indikasi,
 				'dosis' => $row -> dosis,
@@ -100,7 +102,8 @@ class Data_obat extends CI_Controller {
         					);
         $this -> load -> library ('upload',$config);
         $nm_barang = $this -> input -> post('nm_barang');
-        $kd_kategori = $this -> input -> post('kd_kategori');
+        $nm_kategori = $this -> input -> post('nm_kategori');
+        $this-> Kategori_model ->get_kategori();
         $komposisi = $this -> input -> post('komposisi');
         $indikasi = $this -> input -> post('indikasi');
         $dosis = $this -> input -> post('dosis');
@@ -116,7 +119,7 @@ class Data_obat extends CI_Controller {
         		unlink($row -> img);
         		$data = array(
         			'nm_barang' => $nm_barang,
-        			'kd_kategori' => $kd_kategori,
+        			'nm_kategori' => $nm_kategori,
         			'komposisi' => $komposisi,
         			'indikasi' => $indikasi,
         			'dosis' => $dosis,
@@ -135,7 +138,7 @@ class Data_obat extends CI_Controller {
         }else{
         	$data = array(
         			'nm_barang' => $nm_barang,
-        			'kd_kategori' => $kd_kategori,
+        			'nm_kategori' => $nm_kategori,
         			'komposisi' => $komposisi,
         			'indikasi' => $indikasi,
         			'dosis' => $dosis,

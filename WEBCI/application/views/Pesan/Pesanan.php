@@ -51,8 +51,8 @@
                   <th><?php echo $row -> mtd_pengirman ?></th>
                   <th><?php echo $row -> mtd_pembayaran ?></th>
                   <th><?php echo $row -> status ?></th>
-                  <th><a href="<?php echo base_url('index.php/Pesanan/detailPesanan/'.$row -> kd_order) ?>" class ="btn btn-raised btn-primary btn-block waves-effect waves-classic" type="button">
-                  </th>
+                  <td><a href="<?php echo base_url('index.php/Pesanan/detailPesanan/'.$row -> kd_order) ?>" class ="btn btn-raised btn-primary btn-block waves-effect waves-classic" type="button">
+                  </t>
                 </tr>
                 <?php } ?>
                   

@@ -24,18 +24,19 @@
                 <div class="col-md-10 ">
                     <h4 class="example-title">Nama Obat</h4>
                     <input type="text" class="form-control" id="inputPlaceholder" placeholder="Masukkan Nama Obat" name="nm_barang">
+                    <input type="hidden" class="form-control" name="id" placeholder="Masukkan Judul Obat">
                 </div>
                 <div class="col-md-6 ">
                    <h4 class="example-title">Kategori Obat</h4>
-                  <select class="form-control" name="kd_kategori">
+                  <select class="form-control" name="nm_kategori">
                     <option>--- Pilih Kategori ---</option>
                     <?php
-            foreach ($data_kategori as $value) {
-      ?>
+                      foreach ($data_kategori as $value) {
+                    ?>
                     <option value="<?php echo $value->kd_kategori ?>"><?php echo $value->nm_kategori; ?></option>
                     <?php
-               }
-            ?>
+                      }
+                    ?>
                   </select>
                 </div>
                 <div class="col-md-10 ">

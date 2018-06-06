@@ -23,7 +23,7 @@
               <form autocomplete="off" method="post" action="<?php echo base_url(). 'index.php/Data_obat/editaction'; ?>" enctype="multipart/form-data">
                 <div class="col-md-10 ">
                     <h4 class="example-title">Nama Obat</h4>
-                    <input type="text" class="form-control" id="inputPlaceholder" placeholder="Masukkan Nama Obat" name="nm_barang" value="<?php echo $nm_barang; ?>">
+                    <input type="text" class="form-control" placeholder="Masukkan Nama Obat" name="nm_barang" value="<?php echo $nm_barang; ?>">
                     <input type="hidden" class="form-control" name="id" placeholder="Masukkan Judul Tips" value="<?php echo $kd_barang; ?>">
                 </div>
                 <div class="col-md-6 ">
@@ -31,8 +31,8 @@
                   <select class="form-control" name="kd_kategori">
                     <option>--- Pilih Kategori ---</option>
                     <?php
-            foreach ($data_kategori as $value) {
-      ?>
+                      foreach ($data_kategori as $value) {
+                    ?>
                     <option value="<?php echo $value->kd_kategori ?>"><?php echo $value->nm_kategori; ?></option>
                     <?php
                }

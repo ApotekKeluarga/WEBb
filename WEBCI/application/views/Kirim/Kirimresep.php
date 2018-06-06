@@ -15,7 +15,12 @@
 
     <?php $this->load->view('Search'); ?>
       <!-- Panel Table Add Row -->
-          <div class="table-responsive"></div>
+          <div class="panel">
+        <header class="panel-heading">
+          <h3 class="panel-title">Kirim Resep</h3>
+        </header>
+        <div class="panel-body">
+          <div class="row">
 		    <table class="table table-bordered" width="100%" cellspacing="0">
 		      <thead class="bg-light">
 			      <tr>
@@ -27,11 +32,14 @@
               <th>Keterangan</th>
 			        <th width="115px">Action</th>
 			      </tr>
+		    </thead>
+        <tbody>
             <?php
+            $no=1;
             foreach ($data_resep as $row) {
             ?>
             <tr>
-              <th><?php echo $row -> kd_kirim_resep ?></th>
+              <th><?php echo $no++ ?></th>
               <th><?php echo $row -> status_obat?></th>
               <th><?php echo $row -> status_pesanan ?></th>
               <th><img src="<?php echo base_url().$row -> img ?>" width="100" height="100"></th>
@@ -39,8 +47,6 @@
               <th><?php echo $row -> keterangan ?></th>
             </tr>
             <?php } ?>
-		    </thead>
-            <tbody>
               
             </tbody>
           </table>

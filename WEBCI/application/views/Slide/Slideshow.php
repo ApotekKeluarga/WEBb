@@ -45,8 +45,11 @@
                 <tr>
                   <td><?php echo $no++ ?></td>
                   <td><img src="<?php echo base_url().$slide -> img ?>" width="100" height="100"></td>
-                  <td><a href="<?php echo base_url('index.php/Slideshow/edit/'.$slide -> kd_slideshow) ?>" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row waves-effect waves-classic" data-toggle="tooltip" data-original-title="Edit"><i class="icon md-edit" aria-hidden="true"></i></a>
-                    <a href="<?php echo base_url('index.php/Slideshow/hapus/'.$slide->kd_slideshow) ?>" class="btn btn-sm btn-icon btn-pure btn-default on-default remove-row waves-effect waves-classic" data-toggle="tooltip" data-original-title="Remove" onclick="javascript: return confirm('Anda Yakin Akan Menghapus ?')"><i class="icon md-delete" aria-hidden="true"></i></a></td>
+                  <td>
+                    <a href="<?php echo base_url('index.php/Slideshow/edit/'.$slide -> kd_slideshow) ?>" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row waves-effect waves-classic" data-toggle="tooltip" data-original-title="Edit"><i class="icon md-edit" aria-hidden="true"></i></a>
+                    <a href="<?php echo base_url('index.php/Slideshow/hapus/'.$slide->kd_slideshow) ?>" class="btn btn-sm btn-icon btn-pure btn-default on-default remove-row waves-effect waves-classic" data-toggle="tooltip" data-original-title="Remove" onclick="javascript: return confirm('Anda Yakin Akan Menghapus ?')"><i class="icon md-delete" aria-hidden="true"></i></a>
+                    </a>
+                  </td>
                 </tr>
             <?php
                 }
