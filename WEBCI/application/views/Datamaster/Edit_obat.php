@@ -33,7 +33,7 @@
                     <?php
                       foreach ($data_kategori as $value) {
                     ?>
-                    <option value="<?php echo $value->kd_kategori ?>"><?php echo $value->nm_kategori; ?></option>
+                    <option value="<?php echo $value->kd_kategori ?>"><?php echo $value->kd_kategori; ?></option>
                     <?php
                }
             ?>
