@@ -5,20 +5,17 @@
  <!-- Page -->
   <div class="page">
     <div class="page-header">
-      <h1 class="page-title">DataTables</h1>
+      <h1 class="page-title">Data News</h1>
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-        <li class="breadcrumb-item"><a href="javascript:void(0)">Tables</a></li>
-        <li class="breadcrumb-item active">DataTables</li>
+        <li class="breadcrumb-item"><a href="http://localhost/WeBb/WEBCI/index.php/Web/Dashboard">Dashboard
+        </a></li>
+        <li class="breadcrumb-item active">Data News</li>
       </ol>
     </div>
 
     <?php $this->load->view('Search'); ?>
       <!-- Panel Table Add Row -->
       <div class="panel">
-        <header class="panel-heading">
-          <h3 class="panel-title">Berita</h3>
-        </header>
         <div class="panel-body">
           <div class="row">
             <div class="col-md-6">

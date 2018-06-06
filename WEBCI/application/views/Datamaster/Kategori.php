@@ -5,11 +5,10 @@
  <!-- Page -->
   <div class="page">
     <div class="page-header">
-      <h1 class="page-title">DataTables</h1>
+      <h1 class="page-title">Data Kategori</h1>
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-        <li class="breadcrumb-item"><a href="javascript:void(0)">Tables</a></li>
-        <li class="breadcrumb-item active">DataTables</li>
+        <li class="breadcrumb-item"><a href="http://localhost/WeBb/WEBCI/index.php/Web/Dashboard">Dashboard</a></li>
+        <li class="breadcrumb-item active">Data Kategori</li>
       </ol>
     </div>
 
@@ -17,14 +16,13 @@
       <!-- Panel Table Add Row -->
       <div class="panel">
         <header class="panel-heading">
-          <h3 class="panel-title">Tambah Kategori</h3>
         </header>
         <div class="panel-body">
           <div class="row">
             <div class="col-md-6">
               <div class="mb-15">
                 <a href="<?php echo base_url() ?>index.php/Kategori/tambah_kategori" id="addToTable" class="btn btn-primary" type="button">
-                  <i class="icon md-plus" aria-hidden="true"></i> Add row
+                  <i class="icon md-plus" aria-hidden="true"></i> Tambah Kategori
                 </a>
               </div>
             </div>
@@ -46,7 +44,7 @@
                   <td><?php echo $no++; ?></td>
                   <td><?php echo $kate-> nm_kategori?></td>
                   <td>
-                    <a href="<?php echo base_url('index.php/Kategori/edit/'.$kate -> kd_kategori) ?>" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row waves-effect waves-classic" data-toggle="tooltip" data-original-title="Edit"><i class="icon md-edit" aria-hidden="true"></i></a>
+                    <a href="<?php echo base_url('index.php/Kategori/edit/'.$kate -> kd_kategori) ?>" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row waves-effect waves-classic" data-toggle="tooltip" data-original-title="Edit"><i class="icon md-edit" aria-hidden="true" onclick="javascript: return confirm('Anda Yakin Akan Mengubah Data ?')"></i></a>
                     <a href="<?php echo base_url('index.php/Kategori/hapus/'.$kate-> kd_kategori) ?>" class="btn btn-sm btn-icon btn-pure btn-default on-default remove-row waves-effect waves-classic" data-toggle="tooltip" data-original-title="Remove"><i class="icon md-delete" aria-hidden="true" onclick="javascript: return confirm('Anda Yakin Akan Menghapus ?')"></i></a></td>
                 <tr>
             <?php

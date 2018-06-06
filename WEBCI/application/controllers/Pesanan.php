@@ -20,7 +20,7 @@ function __construct(){
 		if($row){
 			$data = array(
 				'kd_order' => $row -> kd_order,
-				'kd_user' => $row -> kd_user,
+				'nama' => $row -> nama,
 				'No_telp' => $row -> No_telp,
 				'Tgl_order' => $row -> Tgl_order,
 				'Detail_alamat' => $row -> Detail_alamat,

@@ -5,18 +5,18 @@
  <!-- Page -->
   <div class="page">
     <div class="page-header">
-      <h1 class="page-title">DataTables</h1>
+      <h1 class="page-title">Detail Pesanan</h1>
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-        <li class="breadcrumb-item"><a href="javascript:void(0)">Tables</a></li>
-        <li class="breadcrumb-item active">DataTables</li>
+        <li class="breadcrumb-item"><a href="http://localhost/WeBb/WEBCI/index.php/Web/Dashboard">Dashboard</a></li>
+        <li class="breadcrumb-item"><a href="http://localhost/WeBb/WEBCI/index.php/Pesanan">Data Pesanan</a></li>
+        <li class="breadcrumb-item active">Detail Pesanan</li>
       </ol>
     </div>
     
     <!-- awal page content -->
   <div class="panel">
         <header class="panel-heading">
-          <h3 class="panel-title">Pesan</h3>
+          <h3 class="panel-title">Data Pemesan</h3>
         </header>
         <div class="panel-body">
         <table class="table table-bordered" width="33%" cellspacing="0">
@@ -24,7 +24,7 @@
             <tr>
               <td width="28%">Nama User</td>
               <td width="3%"> : </td>
-              <td width="69%"><?php echo $kd_user; ?></td>
+              <td width="69%"><?php echo $nama ?></td>
             </tr>
             <tr>
               <td width="28%">No telp</td>

@@ -5,11 +5,11 @@
  <!-- Page -->
   <div class="page">
     <div class="page-header">
-      <h1 class="page-title">DataTables</h1>
+      <h1 class="page-title">Edit Data SlideShow</h1>
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-        <li class="breadcrumb-item"><a href="javascript:void(0)">Tables</a></li>
-        <li class="breadcrumb-item active">DataTables</li>
+        <li class="breadcrumb-item"><a href="http://localhost/WeBb/WEBCI/index.php/Web/Dashboard">Dashboard</a></li>
+        <li class="breadcrumb-item"><a href="http://localhost/WeBb/WEBCI/index.php/Slideshow">Data SlideShow</a></li>
+        <li class="breadcrumb-item active">Edit Data SlideShow</li>
       </ol>
     </div>
 
@@ -18,9 +18,6 @@
      
       <!-- Panel Table Add Row -->
       <div class="panel">
-            <div class="panel-heading">
-              <h3 class="panel-title">Tambah Berita</h3>
-            </div>
             <div class="panel-body container-fluid">
               <form autocomplete="off" method="post" action="<?php echo base_url(). 'index.php/Slideshow/editaction'; ?>" enctype="multipart/form-data">
               <div class="col-md-6 col-lg-4">

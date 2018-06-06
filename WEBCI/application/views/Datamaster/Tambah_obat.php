@@ -5,11 +5,11 @@
  <!-- Page -->
   <div class="page">
     <div class="page-header">
-      <h1 class="page-title">DataTables</h1>
+      <h1 class="page-title">Tambah Obat</h1>
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-        <li class="breadcrumb-item"><a href="javascript:void(0)">Tables</a></li>
-        <li class="breadcrumb-item active">DataTables</li>
+        <li class="breadcrumb-item"><a href="http://localhost/WeBb/WEBCI/index.php/Web/Dashboard">Dashboard</a></li>
+        <li class="breadcrumb-item"><a href="http://localhost/WeBb/WEBCI/index.php/Data_obat">Data Obat</a></li>
+        <li class="breadcrumb-item active">Tambah Obat</li>
       </ol>
     </div>
 
