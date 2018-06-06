@@ -41,7 +41,10 @@
               <th>status</th>
               <th width="115px">Action</th>
             </tr>
-            <?php
+            
+        </thead>
+            <tbody>
+              <?php
             foreach ($data_pesanan as $row) {
             ?>
             <tr>
@@ -58,8 +61,6 @@
               </th>
             </tr>
             <?php } ?>
-        </thead>
-            <tbody>
               
             </tbody>
           </table>

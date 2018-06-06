@@ -63,7 +63,7 @@
                   <td><img src="<?php echo base_url().$obat -> img ?>" width="100" height="100"></td>
                   <td>
                     <a href="<?php echo base_url('index.php/Data_obat/edit/'.$obat -> kd_barang) ?>" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row waves-effect waves-classic" data-toggle="tooltip" data-original-title="Edit"><i class="icon md-edit" aria-hidden="true" onclick="javascript: return confirm('Anda Yakin Akan Mengubah Data ?')"></i>
-                    <a href="<?php echo base_url('index.php/Data_obat/hapus/'.$obat->kd_barang) ?>" class="btn btn-sm btn-icon btn-pure btn-default on-default remove-row waves-effect waves-classic" data-toggle="tooltip" data-original-title="Remove"><i class="icon md-delete" aria-hidden="true" onclick="javascript: return confirm('Anda Yakin Akan Menghapus ?')"></i></a></td></td>
+                    <a href="<?php echo base_url('index.php/Data_obat/hapus/'.$obat-> kd_barang) ?>" class="btn btn-sm btn-icon btn-pure btn-default on-default remove-row waves-effect waves-classic" data-toggle="tooltip" data-original-title="Remove"><i class="icon md-delete" aria-hidden="true" onclick="javascript: return confirm('Anda Yakin Akan Menghapus ?')"></i></a></td></td>
                 </tr>
             <?php
                 }

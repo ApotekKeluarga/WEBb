@@ -19,8 +19,8 @@
 		}
 		public function get_product_keyword($keyword){
 			$cari = $this->input->GET('cari', TRUE);
-		$data = $this->db->query("SELECT * from tbl_barang where nm_barang like '%$cari%' ");
-		return $data->result();
+			$data = $this->db->query("SELECT * from tbl_barang where nm_barang like '%$cari%' ");
+			return $data->result();
 		}
 	}
 ?>

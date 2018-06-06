@@ -20,7 +20,7 @@
         </header>
         <div class="panel-body">
         <table class="table table-bordered" width="33%" cellspacing="0">
-          <thead class="bg-light">
+          <thead >
             <tr>
               <td width="28%">Nama User</td>
               <td width="3%"> : </td>
