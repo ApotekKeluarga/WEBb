@@ -1,7 +1,7 @@
 <?php
 	class Kategori_model extends CI_Model{ 
 		function get_kategori(){
-			return $this->db->query('SELECT * FROM kategori ORDER BY nm_kategori DESC')->result();
+			return $this->db->query('SELECT * FROM kategori ORDER BY kd_kategori DESC')->result();
 		}
 		function insert(){
 		$sql = sprintf("INSERT INTO kategori VALUES ('%s')",

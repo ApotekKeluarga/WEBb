@@ -28,7 +28,7 @@
                 </div>
                 <div class="col-md-6 ">
                    <h4 class="example-title">Kategori Obat</h4>
-                  <select class="form-control" name="nm_kategori">
+                  <select class="form-control" name="kd_kategori">
                     <option>--- Pilih Kategori ---</option>
                     <?php
                       foreach ($data_kategori as $value) {
