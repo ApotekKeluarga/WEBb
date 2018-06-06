@@ -16,15 +16,15 @@ function __construct(){
 	}
 	function detailPesanan($id){
 	$row = $this -> Pesanan_model -> get_by_id($id);
+	$this -> load -> library('encrypt');
 		if($row){
 			$data = array(
 				'kd_order' => $row -> kd_order,
 				'kd_user' => $row -> kd_user,
-				'nama' => $row -> nm,
-				'no_telp' => $row -> no_telp,
-				'tgl_order' => $row -> tgl_order,
+				'No_telp' => $row -> No_telp,
+				'Tgl_order' => $row -> Tgl_order,
 				'Detail_alamat' => $row -> Detail_alamat,
-				'mtd_pengiriman' => $row -> mtd_pengiriman,
+				'mtd_pengirman' => $row -> mtd_pengirman,
 				'mtd_pembayaran' => $row -> mtd_pembayaran,
 			);
 			$this -> load -> view('Pesan/Detail',$data);
